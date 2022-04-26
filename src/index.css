@@ -20,9 +20,9 @@
 
     --transition: all 400ms ease;
 
-    --container-width-lg: 75%;
+    /* --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-sm: 90%;
+    --container-width-sm: 90%; */
 }
 
 html {
@@ -38,12 +38,15 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
+    margin: 0 auto ;
+    max-width: 1024px;
+    width: 100%;
 }
 
 /* ============= GENERAL STYLES ============== */
 
 .container {
-    max-width: var(--container-width-lg);
+    max-width: 90%;
     margin: 0 auto;
 
 }
