@@ -34,7 +34,6 @@ html {
 }
 
 body {
-    /* font-family: 'Noto Serif', serif; */
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
@@ -44,7 +43,7 @@ body {
 /* ============= GENERAL STYLES ============== */
 
 .container {
-    width: var(--container-width-lg);
+    max-width: var(--container-width-lg);
     margin: 0 auto;
 
 }
