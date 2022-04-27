@@ -19,7 +19,9 @@
     --color-light: rgba(255, 255, 255, 0.6);
 
     --transition: all 400ms ease;
-
+    /* max-width: 1240px; */
+    width: 100%;
+    margin: 0 auto ;
     /* --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%; */
@@ -38,18 +40,17 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    margin: 0 auto ;
-    max-width: 1024px;
-    width: 100%;
+    margin: 0 auto;
+    
 }
 
 /* ============= GENERAL STYLES ============== */
 
 .container {
-    max-width: 90%;
     margin: 0 auto;
-
+    max-width: 60%;
 }
+
 h1, h2, h3, h4, h5 {
     font-weight: 500;
 }
