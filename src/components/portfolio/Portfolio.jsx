@@ -1,14 +1,19 @@
 import React from 'react'
 import "./portfolio.css"
 import IMG1 from "../../assets/portfolio1.jpg"
-import IMG2 from "../../assets/123.jpg"
+import IMG2 from "../../assets/portfolio2.jpg"
+import IMG3 from "../../assets/portfolio3.jpg"
+import IMG4 from "../../assets/portfolio4.jpg"
+import IMG5 from "../../assets/portfolio5.jpg"
+import IMG6 from "../../assets/portfolio6.jpg"
+
 
 const data = [{
   id: 1,
-  image: IMG1,
-  title: "Title of work",
-  github: "github link",
-  demo: "demo link"
+  image: IMG3,
+  title: "Mesto",
+  github: "https://github.com/kykp/mesto",
+  demo: "https://kykp.github.io/mesto/"
 },
 {
   id: 2,
@@ -20,16 +25,28 @@ const data = [{
 {
   id: 3,
   image: IMG1,
-  title: "Title of work",
-  github: "github link",
-  demo: "demo link"
+  title: " Video-Catalog",
+  github: "https://github.com/kykp/React-Video-Catalog",
+  demo: "https://kykp.github.io/React-Video-Catalog/"
 },
 {
   id: 4,
-  image: IMG1,
-  title: "Title of work",
-  github: "github link",
-  demo: "demo link"
+  image: IMG4,
+  title: "ToDo list on React",
+  github: "https://github.com/kykp/ReactLearn1.io",
+  demo: "https://kykp.github.io/ReactLearn1.io/"
+}, {
+  id:5,
+  image: IMG5,
+  title: "First SPA React",
+  github: "https://github.com/kykp/spa-react",
+  demo: "https://spa-react-ka5j77d00-kykp.vercel.app/"
+}, {
+  id:6,
+  image: IMG6,
+  title: "E-commerce",
+  github: "https://github.com/kykp/e-shop",
+  demo: "https://kykp.github.io/e-shop/"
 }
 
 ]
