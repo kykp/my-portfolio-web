@@ -4,9 +4,9 @@ import {BsPatchCheckFill} from "react-icons/bs"
 
 const dataFront = [ 
   {
-  id: 1,
-  name: "HTML",
-  level: "Intermediate"
+    id: 1,
+    name: "HTML",
+    level: "Intermediate"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const dataFront = [
   },
   {
     id: 4,
-    name: "React js",
+    name: "React",
     level: "Studying"
   },
   {
