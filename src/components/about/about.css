@@ -69,6 +69,12 @@
     text-align: center;
 }
 
+.btn__about {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============ */
 @media screen and (max-width: 1024px) {
     .about__container {

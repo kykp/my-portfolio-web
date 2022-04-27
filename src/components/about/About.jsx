@@ -41,8 +41,10 @@ const About = () => {
             
           </div>
           <p> At Yandex Practicum I studied HTML and CSS, two projects were made.  The next time I studied Javascript and practiced on Codewar.com . Now I'm learning React - this is what I really like!</p>
-
-            <a href="#contact" className='btn btn-primary'>Let`s Talk</a>
+          <div className='btn__about'>
+           <a href="#contact" className='btn btn-primary '>Let`s Talk</a>
+          </div>
+            
         </div>
       </div>
     </section>

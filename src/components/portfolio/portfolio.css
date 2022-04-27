@@ -1,10 +1,13 @@
 .portfolio__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2.5rem;
 }
 
 .portfolio__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
@@ -24,27 +27,27 @@
 
 .portfolio__item h3 {
     margin: 1.2rem 0 2rem;
+    text-align: center;
 }
 
 .portfolio__item-cta {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============ */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
      .portfolio__container {
          grid-template-columns: 1fr 1fr;
          gap: 1.2rem;
      }
-  }
+  } */
   
   /* ============= MEDIA QUERIES (SMALL DEVICES) ============ */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 400px) {
     .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
   }
-  
