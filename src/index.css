@@ -19,12 +19,8 @@
     --color-light: rgba(255, 255, 255, 0.6);
 
     --transition: all 400ms ease;
-    /* max-width: 1240px; */
     width: 100%;
     margin: 0 auto ;
-    /* --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%; */
 }
 
 html {
@@ -48,7 +44,8 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 1240px;
+    padding: 0 20px;
 }
 
 h1, h2, h3, h4, h5 {

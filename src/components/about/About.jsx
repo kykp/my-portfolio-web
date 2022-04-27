@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import ME from "../../assets/me-1.png"
+// import ME from "../../assets/me-1.png"
 import {CgAwards} from "react-icons/cg"
 import {FiUsers} from "react-icons/fi"
 import {VscFolderLibrary} from "react-icons/vsc"
@@ -12,35 +12,35 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className="container about__container">
-        <div className="about__me">
+        {/* <div className="about__me">
           <div className="about__me-image">
             <img src={ME} alt="About" />
           </div>
-        </div>
+        </div> */}
         
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
               <CgAwards className="about__icon"/>
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>6+ Month Learning</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about__icon"/>
-              <h5>Clinets</h5>
-              <small>200+ WorldWide</small>
+              <h5>Favorite Library</h5>
+              <small>React js</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon"/>
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <h5>Projects Made In The Learning Process</h5>
+              <small>5+ Completed</small>
             </article>
 
             
           </div>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, ducimus amet sint quae provident at repellat dolor assumenda minima nam in voluptatum corporis optio ex. Itaque laudantium quod nam.</p>
+          <p> At Yandex Practicum I studied HTML and CSS, two projects were made.  The next time I studied Javascript and practiced on Codewar.com . Now I'm learning React - this is what I really like!</p>
 
             <a href="#contact" className='btn btn-primary'>Let`s Talk</a>
         </div>

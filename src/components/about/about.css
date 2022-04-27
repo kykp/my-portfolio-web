@@ -1,8 +1,8 @@
-.about__container {
+/* .about__container {
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
-}
+} */
 
 .about__me {
     width: 70%;
@@ -62,8 +62,11 @@
 }
 
 .about__content p {
-    margin: 2rem 0 2.6rem;
+    margin: 0 auto;
+    padding-top: 15px;
     color: var(--colo-light);
+    max-width: 85%;
+    text-align: center;
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============ */
@@ -76,10 +79,6 @@
     .about__me {
         width: 50%;
         margin: 2rem auto 4rem;
-    }
-    
-    .about__content p {
-        margin: 1rem 0 1.5rem;
     }
    
 }
@@ -98,10 +97,6 @@
 
     .about__content {
         text-align: center;
-    }
-
-    .about__content p {
-        margin: 1.5rem 0
     }
 }
 

@@ -26,8 +26,9 @@
 
 .experience__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     row-gap: 2rem;
+    justify-items: left;
 }
 
 .experience__details {
@@ -36,6 +37,7 @@
 }
 
 .experience__details-icon {
+    flex:1;
     margin-top: 6px;
     color: var(--color-primary);
 }
