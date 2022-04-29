@@ -1,13 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./about.css"
 // import ME from "../../assets/me-1.png"
 import {CgAwards} from "react-icons/cg"
 import {FiUsers} from "react-icons/fi"
 import {VscFolderLibrary} from "react-icons/vsc"
 
-const About = () => {
+import {useOnScreen} from "../hooks/UseOnScreen"
+
+const About = ({updateData}) => {
+  const [ref, visible] = useOnScreen({ threshold: 0.7 });
+
+  useEffect(() => {
+    if (visible) {
+      updateData("#about");
+    }
+  }, [visible])
+
   return (
-    <section id="about">
+    <section ref={ref} id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 

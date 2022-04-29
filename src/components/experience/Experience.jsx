@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./experience.css"
 import {BsPatchCheckFill} from "react-icons/bs"
+import {useOnScreen} from "../hooks/UseOnScreen"
 
 const dataFront = [ 
   {
@@ -20,7 +21,7 @@ const dataFront = [
   },
   {
     id: 4,
-    name: "React",
+    name: "React JS",
     level: "Studying"
   },
   {
@@ -44,9 +45,18 @@ const dataBack = [
 ];
 
 
-const Experience = () => {
+const Experience = ({updateData}) => {
+
+  const [ref, visible] = useOnScreen({ threshold: 0.7 });
+  
+  useEffect(() => {
+    if (visible) {
+      updateData("#experience");
+    }
+  }, [visible])
+
   return (
-    <section id="experience">
+    <section ref={ref} id="experience">
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 

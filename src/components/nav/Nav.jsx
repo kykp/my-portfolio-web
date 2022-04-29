@@ -1,32 +1,64 @@
-import React from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useEffect, useState } from 'react'
 import "./nav.css"
 import {AiOutlineHome} from "react-icons/ai"
 import {SiAboutdotme} from "react-icons/si"
 import {BiBook} from "react-icons/bi"
 import {RiServiceLine} from "react-icons/ri"
 import {BiMessageSquareDetail} from "react-icons/bi"
-import { useState } from 'react'
 
+const data = [{
+  id: 1,
+  href: "#",
+  icon: <AiOutlineHome/>,
+},{
+  id: 2,
+  href: "#about",
+  icon: <SiAboutdotme/>
+}
+,{
+  id: 3,
+  href: "#experience",
+  icon: <BiBook/>
+},{
+  id: 4,
+  href: "#portfolio",
+  icon: <BiMessageSquareDetail/>
+},{
+  id: 5,
+  href: "#contact",
+  icon: <RiServiceLine/>
+}
+]
 
-
-const Nav = () => {
+const Nav = ({navData}) => {
   const [activeNav, setActiveNav] = useState("#");
+
+  useEffect(() => {
+    setActiveNav(navData)
+  }, [navData])
+
+  const onChange = (href) => {
+    setActiveNav(href);
+  }
+
   return (
-    <nav>
-      <a href="#" onClick={() => setActiveNav("#")} className={activeNav === "#" ? "active" : ""}><AiOutlineHome/></a>
-      <a href="#about" 
-      onClick={() => setActiveNav("#about")}
-      className={activeNav === "#about" ? "active" : ""}><SiAboutdotme/></a>
-      <a href="#experience"
-       onClick={() => setActiveNav("#experience")}
-       className={activeNav === "#experience" ? "active" : ""}><BiBook/></a>
-      {/* <a href="#services" 
-      onClick={() => setActiveNav("#services")}
-      className={activeNav === "#services" ? "active" : ""}><RiServiceLine/></a> */}
-      <a href="#contact" 
-       onClick={() => setActiveNav("#contact")}
-       className={activeNav === "#contact" ? "active" : ""}><BiMessageSquareDetail/></a>
+   <nav >
+    {
+      data.map(({id, href, icon}) => {
+        return (
+        <a 
+          key={id} 
+          href={href} 
+          className={activeNav === href ? "active" : ""} 
+          onClick={() => onChange(href)}
+          >
+          {icon}
+        </a>)
+      })
+    }
     </nav>
+   
   )
 }
 

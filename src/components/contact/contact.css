@@ -78,7 +78,20 @@ input, textarea {
     resize: none;
     color: var(--color-white);
 }
-
+.form__email-alert {
+    display: none;
+  
+}
+.form__email-alert-active {
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: red;
+    width: 50%;
+    margin:0 auto;
+    border-radius: 0.5rem;
+    text-align: center;
+}
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============ */
 @media screen and (max-width: 1024px) {
     .container.contact__container{
