@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <>
-        <Header />
+        <Header/>
         <Nav navData={nav}/>
         <About updateData={updateData}/>
         <Experience updateData={updateData}/>

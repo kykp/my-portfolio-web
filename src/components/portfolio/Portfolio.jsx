@@ -53,6 +53,7 @@ const data = [{
 const Portfolio = ({updateData}) => {
 
   const [ref, visible] = useOnScreen({ threshold: 0.7 });
+  
 
   useEffect(() => {
     if (visible) {
@@ -60,9 +61,10 @@ const Portfolio = ({updateData}) => {
     }
   }, [visible])
 
+  
   return (
-    <section ref={ref} id="portfolio">
-      <h5>My Recent Work</h5>
+    <section  id="portfolio">
+      <h5 ref={ref}>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className='container portfolio__container'>

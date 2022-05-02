@@ -5,9 +5,8 @@ import "./header.css"
 import HeaderSocials from './HeaderSocials'
 
 
-
 const Header = () => {
-  return (
+   return (
     <header>
       <div className="container header__container">
         <h5>Hello I`m</h5>
