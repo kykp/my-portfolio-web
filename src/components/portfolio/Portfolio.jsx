@@ -20,42 +20,46 @@ const data = [
   {
   id: 6,
   image: IMG6,
-  title: "Mesto",
-  github: "https://github.com/kykp/mesto",
-  demo: "https://kykp.github.io/mesto/"
+  title: "E-Shop",
+  github: "https://github.com/kykp/e-shop",
+  demo: "https://kykp.github.io/e-shop/"
 },
 {
   id: 5,
   image: IMG5,
-  title: "Russian Travel",
-  github: "https://github.com/kykp/russian-travel",
-  demo: "https://kykp.github.io/russian-travel/index.html"
+  title: "SPA React",
+  github: "https://github.com/kykp/spa-react",
+  demo: "https://spa-react-ka5j77d00-kykp.vercel.app/"
 },
 {
   id: 4,
   image: IMG4,
-  title: " Video-Catalog",
-  github: "https://github.com/kykp/React-Video-Catalog",
-  demo: "https://kykp.github.io/React-Video-Catalog/"
+  title: "ToDo list on React",
+  github: "https://github.com/kykp/ReactLearn1.io",
+  demo: "https://kykp.github.io/ReactLearn1.io/"
 },
 {
   id: 3,
   image: IMG3,
-  title: "ToDo list on React",
-  github: "https://github.com/kykp/ReactLearn1.io",
-  demo: "https://kykp.github.io/ReactLearn1.io/"
+  title: "Mesto",
+  github: "https://github.com/kykp/mesto",
+  demo: "https://kykp.github.io/mesto/"
+ 
 }, {
   id:2,
   image: IMG2,
-  title: "First SPA React",
-  github: "https://github.com/kykp/spa-react",
-  demo: "https://spa-react-ka5j77d00-kykp.vercel.app/"
+  title: "Russian Travel",
+  github: "https://github.com/kykp/russian-travel",
+  demo: "https://kykp.github.io/russian-travel/index.html"
+ 
 }, {
   id:1,
   image: IMG1,
-  title: "E-commerce",
-  github: "https://github.com/kykp/e-shop",
-  demo: "https://kykp.github.io/e-shop/"
+  title: " Video-Catalog",
+  github: "https://github.com/kykp/React-Video-Catalog",
+  demo: "https://kykp.github.io/React-Video-Catalog/"
+  
+  
 }
 
 ]
