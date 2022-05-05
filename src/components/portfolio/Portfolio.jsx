@@ -7,9 +7,18 @@ import IMG4 from "../../assets/portfolio4.jpg"
 import IMG5 from "../../assets/portfolio5.jpg"
 import IMG6 from "../../assets/portfolio6.jpg"
 import IMG7 from "../../assets/portfolio7.jpg"
+import IMG8 from "../../assets/portfolio8.jpg"
+
 import {useOnScreen} from "../hooks/UseOnScreen"
 
 const data = [
+  {
+    id: 8,
+    image: IMG8,
+    title: "Progress Steps",
+    github: "https://github.com/kykp/progress_steps",
+    demo: "https://progress-steps-peach.vercel.app/"
+  },
   {
     id: 7,
     image: IMG7,
