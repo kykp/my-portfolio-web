@@ -29,7 +29,7 @@ const data = [
   {
   id: 6,
   image: IMG6,
-  title: "E-Shop",
+  title: "E Shop",
   github: "https://github.com/kykp/e-shop",
   demo: "https://kykp.github.io/e-shop/"
 },
@@ -64,7 +64,7 @@ const data = [
 }, {
   id:1,
   image: IMG1,
-  title: " Video-Catalog",
+  title: " Video Catalog",
   github: "https://github.com/kykp/React-Video-Catalog",
   demo: "https://kykp.github.io/React-Video-Catalog/"
   

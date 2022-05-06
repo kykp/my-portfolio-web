@@ -42,7 +42,6 @@ const Contact = ({updateData}) => {
   },[active])
 
   useEffect(() => {
-    
    if (name.length > 0 && email.length > 0 && message.length > 0 && emailValid) {
      setButtonActive(true);
    } else {
@@ -50,19 +49,23 @@ const Contact = ({updateData}) => {
    } 
   },[name, email, message, emailValid ])
 
-  const onEmailValidity = () => {
-    let pattern =  new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+  useEffect(() => {
+    if (email.length > 0) {
+      let pattern =  new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
     
-    if(!pattern.test(email)) {
-      setEmailValid(false);
-      setEmailMessageShow("form__email-alert-active")
+      if(!pattern.test(email)) {
+        setEmailValid(false);
+        setEmailMessageShow("form__email-alert-active")
+      } else {
+        setEmailValid(true);
+        setEmailMessageShow("form__email-alert")
+      }
     } else {
       setEmailValid(true);
       setEmailMessageShow("form__email-alert")
     }
-  }
-
-
+   
+   },[email])
   const [ref, visible] = useOnScreen({ threshold: 0.7 });
   
   useEffect(() => {
@@ -99,8 +102,10 @@ const Contact = ({updateData}) => {
       <form ref={form} onSubmit={sendEmail}>
         
         <input onChange={(e) => setName(e.target.value)} type="text" name="name" placeholder='Your Full Name'  required/>
-        <input onBlur={onEmailValidity} onChange={(e) => setEmail(e.target.value)} type="email" name="email" placeholder='Yuor Email' required />
+        <input  onChange={(e) => setEmail(e.target.value)} type="email" name="email" placeholder='Yuor Email' required />
+
         <div className={emailMessageShow}>Invalid E-mail!</div>
+
         <textarea onChange={(e) => setMessage(e.target.value)} name="message" rows="7" placeholder='Your Message' required></textarea>
         <button disabled={buttonActive? null : "disabled"} type='sumbit' className='btn btn-primary'>
           {buttonActive? "Send Message" : "Filled Up Form Please"}</button>
