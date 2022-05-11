@@ -8,10 +8,18 @@ import IMG5 from "../../assets/portfolio5.jpg"
 import IMG6 from "../../assets/portfolio6.jpg"
 import IMG7 from "../../assets/portfolio7.jpg"
 import IMG8 from "../../assets/portfolio8.jpg"
+import IMG9 from "../../assets/portfolio9.jpg"
 
 import {useOnScreen} from "../hooks/UseOnScreen"
 
 const data = [
+  {
+    id: 9,
+    image: IMG9,
+    title: "Expense Tracker",
+    github: "https://github.com/kykp/expence_tracker",
+    demo: "https://expence-tracker-seven.vercel.app/"
+  },
   {
     id: 8,
     image: IMG8,
