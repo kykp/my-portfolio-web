@@ -50,7 +50,7 @@ const About = ({updateData}) => {
             <article className="about__card">
               <CgAwards className="about__icon"/>
               <h5>Experience</h5>
-              <small>{whenIamStartLearnJS()} months</small>
+              <small>{whenIamStartLearnJS()} + months</small>
             </article>
 
             <article className="about__card">
