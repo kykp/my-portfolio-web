@@ -7,6 +7,23 @@ import {VscFolderLibrary} from "react-icons/vsc"
 
 import {useOnScreen} from "../hooks/UseOnScreen"
 
+function whenIamStartLearnJS() {
+  const dateOfStart = new Date("10/01/2021");
+  const currentDate = new Date();
+
+  let Difference_In_Time = currentDate.getTime() - dateOfStart.getTime();
+  let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+  let currentStage = Math.floor(Difference_In_Days/30);
+
+  if (currentStage > 12 ) {
+    return (currentStage / 12) + (currentStage - 12)
+  } else {
+    return currentStage
+  }
+}
+
+
 const About = ({updateData}) => {
   const [ref, visible] = useOnScreen({ threshold: 0.7 });
 
@@ -33,7 +50,7 @@ const About = ({updateData}) => {
             <article className="about__card">
               <CgAwards className="about__icon"/>
               <h5>Experience</h5>
-              <small>6+ Month Learning</small>
+              <small>{whenIamStartLearnJS()} months</small>
             </article>
 
             <article className="about__card">
