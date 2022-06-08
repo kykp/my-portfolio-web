@@ -56,7 +56,7 @@ const About = ({updateData}) => {
             <article className="about__card">
               <FiUsers className="about__icon"/>
               <h5>Favorite Library</h5>
-              <small>React js</small>
+              <small>React JS, MERN Stack</small>
             </article>
 
             <article className="about__card">
@@ -67,7 +67,7 @@ const About = ({updateData}) => {
 
             
           </div>
-          <p> At Yandex Practicum I studied HTML and CSS, two projects were made.  The next time I studied Javascript and practiced on Codewar.com . Now I'm learning React - this is what I really like!</p>
+          <p> At Yandex Practicum I studied HTML and CSS, two projects were made.  The next time I studied Javascript and practiced on Codewar.com . Now I'm learning React - this is what I really like! I'm currently working on my own project using MERN Stack, which will be a football-themed app.</p>
           <div className='btn__about'>
            <a href="#contact" className='btn btn-primary '>Let`s Talk</a>
           </div>

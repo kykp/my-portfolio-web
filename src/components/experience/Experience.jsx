@@ -17,16 +17,20 @@ const dataFront = [
   {
     id: 3,
     name: "JavaScript",
-    level: "Studying"
+    level: "Improved basic knowledge"
   },
   {
     id: 4,
     name: "React JS",
-    level: "Studying"
+    level: "Improved basic knowledge"
   },
   {
     id: 5,
     name: "GraphQL",
+    level: "Studying"
+  },  {
+    id: 6,
+    name: "Redux",
     level: "Studying"
   }
 ];
