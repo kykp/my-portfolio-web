@@ -11,21 +11,25 @@ import Footer from "./components/footer/Footer"
 
 
 const App = () => {
-  
+  const [myProjectDone, setMyProjectDone] = useState(0);
   const [nav, setNav] = useState("");
 
   const updateData = (name) =>{
     setNav(name)
   }
 
+  const onClick = (amountOfWorks) => {
+    setMyProjectDone(amountOfWorks)
+  }
+
   return (
     <>
         <Header/>
         <Nav navData={nav}/>
-        <About updateData={updateData}/>
+        <About updateData={updateData}  myProjectDone={myProjectDone}/>
         <Experience updateData={updateData}/>
         {/* <Services/> */}
-        <Portfolio updateData={updateData}/>
+        <Portfolio updateData={updateData} onClick={onClick}/>
         {/* <Testimonials/> */}
         <Contact updateData={updateData}/>
         <Footer/>

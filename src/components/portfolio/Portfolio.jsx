@@ -88,11 +88,17 @@ const data = [
 }
 
 ]
-const Portfolio = ({updateData}) => {
+const Portfolio = ({updateData, onClick}) => {
 
   const [ref, visible] = useOnScreen({ threshold: 0.7 });
   
+  
 
+  useEffect(() => {
+    let amountOfWorks = data.length -1;
+    onClick(amountOfWorks)
+  },[])
+  
   useEffect(() => {
     if (visible) {
       updateData("#portfolio");

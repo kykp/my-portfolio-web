@@ -24,7 +24,7 @@ function whenIamStartLearnJS() {
 }
 
 
-const About = ({updateData}) => {
+const About = ({updateData,  myProjectDone}) => {
   const [ref, visible] = useOnScreen({ threshold: 0.7 });
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const About = ({updateData}) => {
             <article className="about__card">
               <VscFolderLibrary className="about__icon"/>
               <h5>Projects Made In The Learning Process</h5>
-              <small>5+ Completed</small>
+              <small>{myProjectDone} Completed</small>
             </article>
 
             
