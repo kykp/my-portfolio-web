@@ -111,7 +111,7 @@ const Portfolio = ({updateData, onClick}) => {
   
 
   useEffect(() => {
-    let amountOfWorks = data.length -1;
+    let amountOfWorks = data.length;
     onClick(amountOfWorks)
   },[])
   

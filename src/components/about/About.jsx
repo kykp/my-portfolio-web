@@ -26,7 +26,7 @@ function whenIamStartLearnJS() {
 
 const About = ({updateData,  myProjectDone}) => {
   const [ref, visible] = useOnScreen({ threshold: 0.7 });
-
+console.log(myProjectDone)
   useEffect(() => {
     if (visible) {
       updateData("#about");
