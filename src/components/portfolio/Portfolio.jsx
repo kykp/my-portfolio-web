@@ -11,10 +11,18 @@ import IMG8 from "../../assets/portfolio8.jpg"
 import IMG9 from "../../assets/portfolio9.jpg"
 import IMG10 from "../../assets/portfolio10.jpg"
 import IMG11 from "../../assets/portfolio11.jpg"
+import IMG12 from "../../assets/portfolio12.jpg"
 
 import {useOnScreen} from "../hooks/UseOnScreen"
 
 const data = [
+  {
+    id:12,
+    image: IMG12,
+    title: "Simple TodoList with Redux Toolkit",
+    github: "https://github.com/kykp/todo_redux_toolkit",
+    demo: "https://todo-redux-toolkit-delta.vercel.app/"
+  },
   {
     id:11,
     image: IMG11,
