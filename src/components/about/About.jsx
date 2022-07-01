@@ -8,7 +8,7 @@ import {VscFolderLibrary} from "react-icons/vsc"
 import {useOnScreen} from "../hooks/UseOnScreen"
 
 function whenIamStartLearnJS() {
-  const dateOfStart = new Date("10/01/2021");
+  const dateOfStart = new Date("03/01/2022");
   const currentDate = new Date();
 
   let Difference_In_Time = currentDate.getTime() - dateOfStart.getTime();

@@ -7,22 +7,22 @@ const dataFront = [
   {
     id: 1,
     name: "HTML",
-    level: "Intermediate"
+    level: "Applying"
   },
   {
     id: 2,
     name: "CSS",
-    level: "Intermediate"
+    level: "Applying"
   },
   {
     id: 3,
     name: "JavaScript",
-    level: "Improved basic knowledge"
+    level: "Applying"
   },
   {
     id: 4,
     name: "React JS",
-    level: "Improved basic knowledge"
+    level: "Applying"
   },
   {
     id: 5,
@@ -31,7 +31,12 @@ const dataFront = [
   },  {
     id: 6,
     name: "Redux",
-    level: "Studying"
+    level: "Understanding"
+  }
+  ,  {
+    id: 6,
+    name: "Redux Tool Kit",
+    level: "Understanding"
   }
 ];
 
@@ -39,12 +44,17 @@ const dataBack = [
   {
     id: 1,
     name: "MongoDB",
-    level: "The Beginning Of Training"
+    level: "Understanding"
   }, 
   {
     id: 2,
     name: "Node JS",
-    level: "The Beginning Of Training"
+    level: "Applying"
+  },
+  {
+    id: 3,
+    name: "WebSocket",
+    level: "Applying"
   }
 ];
 
