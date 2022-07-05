@@ -8,7 +8,7 @@ import {VscFolderLibrary} from "react-icons/vsc"
 import {useOnScreen} from "../hooks/UseOnScreen"
 
 function whenIamStartLearnJS() {
-  const dateOfStart = new Date("03/01/2022");
+  const dateOfStart = new Date("02/01/2022");
   const currentDate = new Date();
 
   let Difference_In_Time = currentDate.getTime() - dateOfStart.getTime();
@@ -56,7 +56,7 @@ console.log(myProjectDone)
             <article className="about__card">
               <FiUsers className="about__icon"/>
               <h5>Favorite Library</h5>
-              <small>React JS, MERN Stack</small>
+              <small>React JS</small>
             </article>
 
             <article className="about__card">
@@ -67,7 +67,7 @@ console.log(myProjectDone)
 
             
           </div>
-          <p> At Yandex Practicum I studied HTML and CSS, two projects were made.  The next time I studied Javascript and practiced on Codewar.com . Now I'm learning React - this is what I really like! I'm currently working on my own project using MERN Stack, which will be a football-themed app.</p>
+          <p> At Yandex Practicum I studied HTML and CSS, two projects were made.  The next time I studied Javascript and practiced on Codewar.com .I continue to learn new things and create projects.</p>
           <div className='btn__about'>
            <a href="#contact" className='btn btn-primary '>Let`s Talk</a>
           </div>
