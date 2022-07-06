@@ -12,10 +12,18 @@ import IMG9 from "../../assets/portfolio9.jpg"
 import IMG10 from "../../assets/portfolio10.jpg"
 import IMG11 from "../../assets/portfolio11.jpg"
 import IMG12 from "../../assets/portfolio12.jpg"
+import IMG13 from "../../assets/portfolio13.jpg"
 
 import {useOnScreen} from "../hooks/UseOnScreen"
 
 const data = [
+  {
+    id:13,
+    image: IMG13,
+    title: "Chat SocketIO",
+    github: "https://github.com/kykp/socket_io_chat",
+    demo: "https://kykp-chat-websocket.herokuapp.com/chat"
+  },
   {
     id:12,
     image: IMG12,
