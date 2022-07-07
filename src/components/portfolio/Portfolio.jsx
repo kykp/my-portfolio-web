@@ -20,7 +20,7 @@ const data = [
   {
     id:13,
     image: IMG13,
-    title: "Chat SocketIO",
+    title: "Chat createt by Socket IO",
     github: "https://github.com/kykp/socket_io_chat",
     demo: "https://kykp-chat-websocket.herokuapp.com/"
   },
