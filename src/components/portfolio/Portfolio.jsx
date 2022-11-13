@@ -14,10 +14,18 @@ import IMG11 from "../../assets/portfolio11.jpg";
 import IMG12 from "../../assets/portfolio12.jpg";
 import IMG13 from "../../assets/portfolio13.jpg";
 import IMG14 from "../../assets/portfolio14.jpg";
+import IMG15 from "../../assets/portfolio15.jpg";
 
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 const data = [
+  {
+    id: 15,
+    image: IMG15,
+    title: "Game Gallery Redux Typescript Api",
+    github: "https://github.com/kykp/rawg",
+    demo: "https://rawg.vercel.app/",
+  },
   {
     id: 14,
     image: IMG14,
