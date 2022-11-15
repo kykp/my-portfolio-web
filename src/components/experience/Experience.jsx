@@ -11,7 +11,7 @@ const dataFront = [
   },
   {
     id: 2,
-    name: "CSS",
+    name: "CSS, SCSS",
     level: "Applying",
   },
   {
@@ -35,8 +35,13 @@ const dataFront = [
     level: "Understanding",
   },
   {
-    id: 6,
+    id: 7,
     name: "Redux Tool Kit",
+    level: "Understanding",
+  },
+  {
+    id: 8,
+    name: "TypeScript",
     level: "Understanding",
   },
 ];
