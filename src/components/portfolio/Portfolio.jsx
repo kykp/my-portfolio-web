@@ -15,10 +15,18 @@ import IMG12 from "../../assets/portfolio12.jpg";
 import IMG13 from "../../assets/portfolio13.jpg";
 import IMG14 from "../../assets/portfolio14.jpg";
 import IMG15 from "../../assets/portfolio15.jpg";
+import IMG16 from "../../assets/portfolio16.jpg";
 
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 const data = [
+  {
+    id: 16,
+    image: IMG16,
+    title: "Avia Tickets, React",
+    github: "https://github.com/kykp/avia",
+    demo: "https://avia-fawn.vercel.app/",
+  },
   {
     id: 15,
     image: IMG15,
