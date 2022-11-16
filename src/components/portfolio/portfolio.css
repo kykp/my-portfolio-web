@@ -6,8 +6,7 @@
 
 .portfolio__item {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column; 
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
@@ -23,7 +22,11 @@
 
 .portfolio__item-image {
     border-radius: 1.5rem;
+    display: flex;
     overflow: hidden;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio__item h3 {
@@ -36,8 +39,7 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
-}
-
+} 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============ */
 /* @media screen and (max-width: 1024px) {
      .portfolio__container {
