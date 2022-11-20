@@ -53,8 +53,7 @@
 }
 .portfolio__techonlogy-item{ 
     width: fit-content;
-    padding: 5px 5px;
-    color: var(--color-bg);
+    padding: 5px 5px; 
     top: 0;
     left: 0;
 }

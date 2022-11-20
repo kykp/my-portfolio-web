@@ -173,7 +173,6 @@ const Portfolio = ({ updateData, onClick }) => {
                 <h3>{title}</h3>
                 {technology && (
                   <div className="portfolio__item_techology">
-                    <span>technologies used:</span>
                     {technology?.map((el) => (
                       <span className="portfolio__techonlogy-item">{el}</span>
                     ))}
