@@ -27,7 +27,16 @@ const data = [
     title: "Todo-List",
     github: "https://github.com/kykp/woman_todo",
     demo: "https://woman-todo.vercel.app/",
-    technology: ["React", "Redux Toolkit", "FireBase", "TypeScript"],
+    technology: [
+      "React",
+      "Redux Toolkit",
+      "FireBase",
+      "TypeScript",
+      "React",
+      "Redux Toolkit",
+      "FireBase",
+      "TypeScript",
+    ],
   },
   {
     id: 16,
@@ -171,6 +180,13 @@ const Portfolio = ({ updateData, onClick }) => {
               </div>
               <div>
                 <h3>{title}</h3>
+                {technology && (
+                  <div className="portfolio__item_techology">
+                    {technology?.map((el) => (
+                      <span className="portfolio__techonlogy-item">{el}</span>
+                    ))}
+                  </div>
+                )}
                 <div className="portfolio__item-cta">
                   <a
                     href={github}
@@ -190,13 +206,6 @@ const Portfolio = ({ updateData, onClick }) => {
                   </a>
                 </div>
               </div>
-              {technology && (
-                <div className="portfolio__item_techology">
-                  {technology?.map((el) => (
-                    <span className="portfolio__techonlogy-item">{el}</span>
-                  ))}
-                </div>
-              )}
             </article>
           );
         })}
