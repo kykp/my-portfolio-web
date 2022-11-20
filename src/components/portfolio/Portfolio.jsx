@@ -16,10 +16,18 @@ import IMG13 from "../../assets/portfolio13.jpg";
 import IMG14 from "../../assets/portfolio14.jpg";
 import IMG15 from "../../assets/portfolio15.jpg";
 import IMG16 from "../../assets/portfolio16.jpg";
+import IMG17 from "../../assets/portfolio17.jpg";
 
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 const data = [
+  {
+    id: 17,
+    image: IMG17,
+    title: "Todo. React, Redux, FireBase, Typescript",
+    github: "https://github.com/kykp/woman_todo",
+    demo: "https://woman-todo.vercel.app/",
+  },
   {
     id: 16,
     image: IMG16,
