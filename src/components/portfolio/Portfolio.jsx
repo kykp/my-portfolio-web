@@ -192,7 +192,7 @@ const Portfolio = ({ updateData, onClick }) => {
               </div>
               {technology && (
                 <div className="portfolio__item_techology">
-                  {technology.map((el) => (
+                  {technology?.map((el) => (
                     <span className="portfolio__techonlogy-item">{el}</span>
                   ))}
                 </div>
