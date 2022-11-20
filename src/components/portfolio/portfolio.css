@@ -1,6 +1,5 @@
 .portfolio__container {
-    display: grid;
-    position: relative;
+    display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2.5rem;
 }
@@ -48,8 +47,7 @@
     align-items: center;
     gap: 10px;
 }
-.portfolio__techonlogy-item{
-    position: absolute;
+.portfolio__techonlogy-item{ 
     width: fit-content;
     padding: 5px 5px;
     top: 0;
