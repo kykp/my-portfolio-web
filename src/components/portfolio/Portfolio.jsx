@@ -190,9 +190,13 @@ const Portfolio = ({ updateData, onClick }) => {
                   </a>
                 </div>
               </div>
-              {technology.map((el) => (
-                <span>{el}</span>
-              ))}
+              {technology && (
+                <div className="portfolio__item_techology">
+                  {technology.map((el) => (
+                    <span className="portfolio__techonlogy-item">{el}</span>
+                  ))}
+                </div>
+              )}
             </article>
           );
         })}

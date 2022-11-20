@@ -1,5 +1,6 @@
 .portfolio__container {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2.5rem;
 }
@@ -40,6 +41,20 @@
     gap: 1rem;
     margin-bottom: 1rem;
 } 
+
+.portfolio__item_techology{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.portfolio__techonlogy-item{
+    position: absolute;
+    padding: 5px 5px;
+    top: 0;
+    left: 0;
+}
+
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============ */
 /* @media screen and (max-width: 1024px) {
      .portfolio__container {
