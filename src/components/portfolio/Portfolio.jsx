@@ -40,9 +40,10 @@ const data = [
   {
     id: 15,
     image: IMG15,
-    title: "Game Gallery Redux Typescript Api",
+    title: "Game Gallery",
     github: "https://github.com/kykp/rawg",
     demo: "https://rawg.vercel.app/",
+    technology: ["React", "Redux Toolkit", "Api", "TypeScript"],
   },
   {
     id: 14,
