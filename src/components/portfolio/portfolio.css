@@ -48,6 +48,7 @@
     align-items: center;
     gap: 10px;
     font-size: 15px;
+    font-weight: 200;
 }
 .portfolio__techonlogy-item{ 
     width: fit-content;
