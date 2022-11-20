@@ -41,23 +41,7 @@
     margin-bottom: 1rem;
 } 
 
-.portfolio__item_techology{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: 15px;
-    font-weight: 200;
-    margin-bottom: 30px;
-}
-.portfolio__techonlogy-item{ 
-    width: fit-content;
-    padding: 5px 5px; 
-    top: 0;
-    left: 0;
-    color: rgba(155, 154, 154, 0.803);
-}
+
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============ */
 /* @media screen and (max-width: 1024px) {

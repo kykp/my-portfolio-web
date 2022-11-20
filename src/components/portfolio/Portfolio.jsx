@@ -169,13 +169,6 @@ const Portfolio = ({ updateData, onClick }) => {
               </div>
               <div>
                 <h3>{title}</h3>
-                {technology && (
-                  <div className="portfolio__item_techology">
-                    {technology?.map((el) => (
-                      <span className="portfolio__techonlogy-item">{el}</span>
-                    ))}
-                  </div>
-                )}
                 <div className="portfolio__item-cta">
                   <a
                     href={github}
