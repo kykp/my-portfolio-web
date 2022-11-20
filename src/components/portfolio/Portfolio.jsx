@@ -27,16 +27,7 @@ const data = [
     title: "Todo-List",
     github: "https://github.com/kykp/woman_todo",
     demo: "https://woman-todo.vercel.app/",
-    technology: [
-      "React",
-      "Redux Toolkit",
-      "FireBase",
-      "TypeScript",
-      "React",
-      "Redux Toolkit",
-      "FireBase",
-      "TypeScript",
-    ],
+    technology: ["React", "Redux Toolkit", "FireBase", "TypeScript"],
   },
   {
     id: 16,
