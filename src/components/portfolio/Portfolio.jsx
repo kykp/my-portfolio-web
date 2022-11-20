@@ -27,7 +27,6 @@ const data = [
     title: "Todo-List",
     github: "https://github.com/kykp/woman_todo",
     demo: "https://woman-todo.vercel.app/",
-    technology: ["React", "Redux Toolkit", "FireBase", "TypeScript"],
   },
   {
     id: 16,
@@ -35,7 +34,6 @@ const data = [
     title: "Avia Tickets",
     github: "https://github.com/kykp/avia",
     demo: "https://avia-fawn.vercel.app/",
-    technology: ["React", "Redux Toolkit"],
   },
   {
     id: 15,
@@ -43,7 +41,6 @@ const data = [
     title: "Game Gallery",
     github: "https://github.com/kykp/rawg",
     demo: "https://rawg.vercel.app/",
-    technology: ["React", "Redux Toolkit", "Api", "TypeScript"],
   },
   {
     id: 14,
