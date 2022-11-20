@@ -24,16 +24,18 @@ const data = [
   {
     id: 17,
     image: IMG17,
-    title: "Todo. React, Redux, FireBase, Typescript",
+    title: "Todo-List",
     github: "https://github.com/kykp/woman_todo",
     demo: "https://woman-todo.vercel.app/",
+    technology: ["React", "Redux Toolkit", "FireBase", "TypeScript"],
   },
   {
     id: 16,
     image: IMG16,
-    title: "Avia Tickets, React",
+    title: "Avia Tickets",
     github: "https://github.com/kykp/avia",
     demo: "https://avia-fawn.vercel.app/",
+    technology: ["React", "Redux Toolkit"],
   },
   {
     id: 15,
@@ -161,7 +163,7 @@ const Portfolio = ({ updateData, onClick }) => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
+        {data.map(({ id, image, title, github, demo, technology }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
@@ -188,6 +190,9 @@ const Portfolio = ({ updateData, onClick }) => {
                   </a>
                 </div>
               </div>
+              {technology.map((el) => (
+                <span>{el}</span>
+              ))}
             </article>
           );
         })}
