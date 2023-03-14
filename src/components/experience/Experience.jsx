@@ -32,17 +32,22 @@ const dataFront = [
   {
     id: 6,
     name: "Redux",
-    level: "Understanding",
+    level: "Applying",
   },
   {
     id: 7,
     name: "Redux Tool Kit",
-    level: "Understanding",
+    level: "Applying",
   },
   {
     id: 8,
     name: "TypeScript",
-    level: "Understanding",
+    level: "Applying",
+  },
+  {
+    id: 9,
+    name: "React Native",
+    level: "Applying",
   },
 ];
 
@@ -50,7 +55,7 @@ const dataBack = [
   {
     id: 1,
     name: "MongoDB",
-    level: "Understanding",
+    level: "Applying",
   },
   {
     id: 2,
