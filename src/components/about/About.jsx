@@ -48,7 +48,7 @@ const About = ({ updateData, myProjectDone }) => {
             <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Favorite Library</h5>
-              <small>React JS</small>
+              <h2>React JS, css Module, Redux toolkit</h2>
             </article>
 
             <article className="about__card">
@@ -58,10 +58,7 @@ const About = ({ updateData, myProjectDone }) => {
             </article>
           </div>
           <p>
-            {" "}
-            At Yandex Practicum I studied HTML and CSS, two projects were made.
-            The next time I studied Javascript and practiced on Codewar.com .I
-            continue to learn new things and create projects.
+          I have been programming for more than a year, I took various courses, internships, wrote on React Js, React Native, Node Js.
           </p>
           <div className="btn__about">
             <a href="#contact" className="btn btn-primary ">
