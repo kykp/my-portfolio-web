@@ -17,10 +17,18 @@ import IMG14 from "../../assets/portfolio14.jpg";
 import IMG15 from "../../assets/portfolio15.jpg";
 import IMG16 from "../../assets/portfolio16.jpg";
 import IMG17 from "../../assets/portfolio17.jpg";
+import IMG18 from "../../assets/portfolio18.jpg";
 
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 const data = [
+  {
+    id: 18,
+    image: IMG18,
+    title: " Web-Chat",
+    github: "https://github.com/kykp/web_chat_frontend",
+    demo: "https://web-chat-frontend.vercel.app/",
+  },
   {
     id: 17,
     image: IMG17,
