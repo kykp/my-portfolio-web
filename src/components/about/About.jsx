@@ -8,27 +8,24 @@ import { VscFolderLibrary } from "react-icons/vsc";
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 function whenIamStartLearnJS() {
-  const dateOfStart = new Date("03/19/2022");
+  const startDate = new Date('2022-03-19');
   const currentDate = new Date();
 
-  let Difference_In_Time = currentDate.getTime() - dateOfStart.getTime();
-  let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+  let months = (currentDate.getMonth() - startDate.getMonth()) +
+      (12 * (currentDate.getFullYear() - startDate.getFullYear()));
+  const years = Math.floor(months / 12);
+  months = months % 12;
 
-  let currentStage = Math.floor(Difference_In_Days / 30);
-
-  if (currentStage > 12) {
-    return currentStage / 12 + (currentStage - 12);
-  } else {
-    return currentStage;
-  }
+  // return { months: months, years: years };
+  return `${years} year, ${months} months`
 }
 
+const descriptions = 'Now I work in SeoTLT web studio, my stack is : React + Typescript'
 const About = ({ updateData, myProjectDone }) => {
   const [ref, visible] = useOnScreen({ threshold: 0.7 });
+
   useEffect(() => {
-    if (visible) {
-      updateData("#about");
-    }
+      visible && updateData("#about");
   }, [visible]);
 
   return (
@@ -42,7 +39,7 @@ const About = ({ updateData, myProjectDone }) => {
             <article className="about__card">
               <CgAwards className="about__icon" />
               <h5>Experience</h5>
-              <small>{whenIamStartLearnJS()} + months</small>
+              <small>{whenIamStartLearnJS()}</small>
             </article>
 
             <article className="about__card">
@@ -57,9 +54,7 @@ const About = ({ updateData, myProjectDone }) => {
               <small>{myProjectDone} Completed</small>
             </article>
           </div>
-          <p>
-          I have been programming for more than a year, I took various courses, internships, wrote on React Js, React Native, Node Js. My favorite stack is React Js, css module, Redux toolkit
-          </p>
+          <p> {descriptions} </p>
           <div className="btn__about">
             <a href="#contact" className="btn btn-primary ">
               Let`s Talk
