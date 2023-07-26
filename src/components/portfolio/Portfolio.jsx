@@ -22,13 +22,13 @@ import IMG18 from "../../assets/portfolio18.jpg";
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 const data = [
-  {
-    id: 18,
-    image: IMG18,
-    title: " Web-Chat",
-    github: "https://github.com/kykp/web_chat_frontend",
-    demo: "https://web-chat-frontend.vercel.app/",
-  },
+  // {
+  //   id: 18,
+  //   image: IMG18,
+  //   title: " Web-Chat",
+  //   github: "https://github.com/kykp/web_chat_frontend",
+  //   demo: "https://web-chat-frontend.vercel.app/",
+  // },
   {
     id: 17,
     image: IMG17,
@@ -57,13 +57,13 @@ const data = [
     github: "https://github.com/kykp/pricing",
     demo: "https://pricing-p4ee.vercel.app/",
   },
-  {
-    id: 13,
-    image: IMG13,
-    title: "Chat created by Socket IO",
-    github: "https://github.com/kykp/socket_io_chat",
-    demo: "https://kykp-chat-websocket.herokuapp.com/",
-  },
+  // {
+  //   id: 13,
+  //   image: IMG13,
+  //   title: "Chat created by Socket IO",
+  //   github: "https://github.com/kykp/socket_io_chat",
+  //   demo: "https://kykp-chat-websocket.herokuapp.com/",
+  // },
   {
     id: 12,
     image: IMG12,
