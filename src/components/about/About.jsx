@@ -49,17 +49,12 @@ const About = ({ updateData, myProjectDone }) => {
             </article>
 
             <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
+              <VscFolderLibrary className="about__icon"/>
               <h5>Projects Made In The Learning Process</h5>
               <small>{myProjectDone} Completed</small>
             </article>
           </div>
           <p> {descriptions} </p>
-          <div className="btn__about">
-            <a href="#contact" className="btn btn-primary ">
-              Let`s Talk
-            </a>
-          </div>
         </div>
       </div>
     </section>
