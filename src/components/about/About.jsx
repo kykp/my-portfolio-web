@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./about.css";
-// import ME from "../../assets/me-1.png"
 import { CgAwards } from "react-icons/cg";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -8,7 +7,8 @@ import { VscFolderLibrary } from "react-icons/vsc";
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 function whenIamStartLearnJS() {
-  const startDate = new Date('2022-03-19');
+  // const startDate = new Date('2022-03-19');
+  const startDate = new Date('2021-10-19');
   const currentDate = new Date();
 
   let months = (currentDate.getMonth() - startDate.getMonth()) +
