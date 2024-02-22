@@ -79,7 +79,7 @@ const Experience = ({ updateData }) => {
 
   useEffect(() => {
     if (visible) {
-      updateData("#experience");
+      updateData("#me");
     }
   }, [visible]);
 

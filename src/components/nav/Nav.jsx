@@ -40,21 +40,16 @@ const Nav = ({navData}) => {
 
   return (
    <nav >
-    {
-      data.map(({id, href, icon}) => {
-        return (
-        <a 
-          key={id} 
+    {data.map(({id, href, icon}) => (
+        <a
+          key={id}
           href={href} 
           className={activeNav === href ? "active" : ""} 
           onClick={() => onChange(href)}
           >
           {icon}
-        </a>)
-      })
-    }
+        </a>))}
     </nav>
-   
   )
 }
 
