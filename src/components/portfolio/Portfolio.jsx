@@ -18,10 +18,18 @@ import IMG15 from "../../assets/portfolio15.jpg";
 import IMG16 from "../../assets/portfolio16.jpg";
 import IMG17 from "../../assets/portfolio17.jpg";
 import IMG18 from "../../assets/portfolio18.jpg";
+import IMG19 from "../../assets/portfolio19.png";
 
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 const data = [
+  {
+    id: 19,
+    image:IMG19,
+    title: 'Vanilla JS form with Validation',
+    github: 'https://github.com/kykp/vanila-form-example',
+    demo: 'https://vanila-form-example.vercel.app/'
+  },
   // {
   //   id: 18,
   //   image: IMG18,
