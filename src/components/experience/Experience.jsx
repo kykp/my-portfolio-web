@@ -17,12 +17,12 @@ const dataFront = [
   {
     id: 3,
     name: "JavaScript",
-    level: "Applying",
+    level: "GrandMaster",
   },
   {
     id: 4,
     name: "React JS",
-    level: "Applying",
+    level: "Master",
   },
   {
     id: 5,
@@ -49,6 +49,11 @@ const dataFront = [
     name: "React Native",
     level: "Applying",
   },
+  {
+    id: 10,
+    name: 'React Hook Form',
+    level: 'Master',
+  }
 ];
 
 const dataBack = [
