@@ -37,13 +37,13 @@ const data = [
   //   github: "https://github.com/kykp/web_chat_frontend",
   //   demo: "https://web-chat-frontend.vercel.app/",
   // },
-  {
-    id: 17,
-    image: IMG17,
-    title: "Todo-List",
-    github: "https://github.com/kykp/woman_todo",
-    demo: "https://woman-todo.vercel.app/",
-  },
+  // {
+  //   id: 17,
+  //   image: IMG17,
+  //   title: "Todo-List",
+  //   github: "https://github.com/kykp/woman_todo",
+  //   demo: "https://woman-todo.vercel.app/",
+  // },
   {
     id: 16,
     image: IMG16,
