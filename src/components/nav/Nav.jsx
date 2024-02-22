@@ -15,17 +15,13 @@ const data = [{
   id: 2,
   href: "#about",
   icon: <SiAboutdotme/>
-}
-,{
+},
+{
   id: 3,
-  href: "#experience",
-  icon: <BiBook/>
-},{
-  id: 4,
   href: "#portfolio",
   icon: <BiMessageSquareDetail/>
 },{
-  id: 5,
+  id: 4,
   href: "#contact",
   icon: <RiServiceLine/>
 }
