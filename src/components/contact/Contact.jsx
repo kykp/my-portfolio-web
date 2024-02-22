@@ -76,15 +76,12 @@ const Contact = ({updateData}) => {
 
   return (
     <section ref={ref} id="contact">
-      <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
       <div className='container contact__container'>
       
         <div className="contact__options">
-          
           <article className="contact__option">
-            
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>kykp@yandex.ru</h5>
@@ -98,24 +95,6 @@ const Contact = ({updateData}) => {
           </article>           
         </div>
         {/* END OF CONTACT OPTIONS */}
-
-      <form ref={form} onSubmit={sendEmail}>
-        
-        <input onChange={(e) => setName(e.target.value)} type="text" name="name" placeholder='Your Full Name'  required/>
-        <input  onChange={(e) => setEmail(e.target.value)} type="email" name="email" placeholder='Yuor Email' required />
-
-        <div className={emailMessageShow}>Invalid E-mail!</div>
-
-        <textarea onChange={(e) => setMessage(e.target.value)} name="message" rows="7" placeholder='Your Message' required></textarea>
-        <button disabled={buttonActive? null : "disabled"} type='sumbit' className='btn btn-primary'>
-          {buttonActive? "Send Message" : "Filled Up Form Please"}</button>
-        {/* MODALE WINDOW START */}
-        <div className={active? "modale_active":"modale"}>
-          {}<h2>Message was sent</h2>
-        </div>
-        {/* MODALE WINDOW END */}
-      </form>
-      
       </div>
       
     </section>
