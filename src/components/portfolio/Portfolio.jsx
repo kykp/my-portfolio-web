@@ -19,10 +19,18 @@ import IMG16 from "../../assets/portfolio16.jpg";
 import IMG17 from "../../assets/portfolio17.jpg";
 import IMG18 from "../../assets/portfolio18.jpg";
 import IMG19 from "../../assets/portfolio19.png";
+import IMG20 from "../../assets/portfolio20.jpg";
 
 import { useOnScreen } from "../hooks/UseOnScreen";
 
 const data = [
+  {
+    id: 20,
+    image: IMG20,
+    title: 'Valantis test project',
+    github: 'https://github.com/kykp/valantis',
+    demo: 'https://valantis-dun.vercel.app/'
+  },
   {
     id: 19,
     image:IMG19,
