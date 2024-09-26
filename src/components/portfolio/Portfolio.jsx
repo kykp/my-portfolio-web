@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/portfolio1.jpg";
 import IMG2 from "../../assets/portfolio2.jpg";
@@ -12,16 +12,13 @@ import IMG9 from "../../assets/portfolio9.jpg";
 import IMG10 from "../../assets/portfolio10.jpg";
 import IMG11 from "../../assets/portfolio11.jpg";
 import IMG12 from "../../assets/portfolio12.jpg";
-import IMG13 from "../../assets/portfolio13.jpg";
 import IMG14 from "../../assets/portfolio14.jpg";
 import IMG15 from "../../assets/portfolio15.jpg";
 import IMG16 from "../../assets/portfolio16.jpg";
-import IMG17 from "../../assets/portfolio17.jpg";
-import IMG18 from "../../assets/portfolio18.jpg";
 import IMG19 from "../../assets/portfolio19.png";
 import IMG20 from "../../assets/portfolio20.jpg";
 
-import { useOnScreen } from "../hooks/UseOnScreen";
+import {useOnScreen} from "../hooks/UseOnScreen";
 
 const data = [
   {
@@ -39,7 +36,7 @@ const data = [
   },
   {
     id: 19,
-    image:IMG19,
+    image: IMG19,
     title: 'Vanilla JS form with Validation',
     github: 'https://github.com/kykp/vanila-form-example',
     demo: 'https://vanila-form-example.vercel.app/'
@@ -171,8 +168,8 @@ const data = [
     demo: "https://kykp.github.io/React-Video-Catalog/",
   },
 ];
-const Portfolio = ({ updateData, onClick }) => {
-  const [ref, visible] = useOnScreen({ threshold: 0.7 });
+const Portfolio = ({updateData, onClick}) => {
+  const [ref, visible] = useOnScreen({threshold: 0.7});
 
   useEffect(() => {
     let amountOfWorks = data.length;
@@ -191,23 +188,23 @@ const Portfolio = ({ updateData, onClick }) => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo, technology }) => {
+        {data.map(({id, image, title, github, demo, technology}) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} alt={title} />
+                <img src={image} alt={title}/>
               </div>
               <div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a
+                  {github && <a
                     href={github}
                     className="btn"
                     rel="noreferrer"
                     target="_blank"
                   >
                     Github
-                  </a>
+                  </a>}
                   <a
                     href={demo}
                     className="btn btn-primary"
