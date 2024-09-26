@@ -25,6 +25,12 @@ import { useOnScreen } from "../hooks/UseOnScreen";
 
 const data = [
   {
+    id: 21,
+    image: '',
+    title: 'beGOAT.ru',
+    demo: 'https://begoat.ru'
+  },
+  {
     id: 20,
     image: IMG20,
     title: 'Valantis test project',
