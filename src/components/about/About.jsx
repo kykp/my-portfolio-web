@@ -20,7 +20,8 @@ function whenIamStartLearnJS() {
   return `${years} year, ${months} months`
 }
 
-const descriptions = 'Now I work in fsight.ru, my stack is : React + Typescript'
+const descriptions = "I currently work at fsight.ru, where I use React and TypeScript in my tech stack."
+
 const About = ({ updateData, myProjectDone }) => {
   const [ref, visible] = useOnScreen({ threshold: 0.7 });
 
